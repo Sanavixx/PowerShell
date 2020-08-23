@@ -1,3 +1,3 @@
 # PowerShell
 
-Repository of scripts I've written to assist during my IT career.
+Repository of scripts I've written during my IT career.
