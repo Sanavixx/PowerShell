@@ -9,7 +9,7 @@ Specifies the computer user is on.
 None. You cannot pipe objects to Get-MappedPrinters.ps1.
 
 .OUTPUTS
-System.Object
+Registry key property.
 
 .EXAMPLE
 .\Get-MappedPrinters -ComputerName TESTPCNAME
