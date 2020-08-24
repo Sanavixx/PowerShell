@@ -52,7 +52,7 @@ param (
 $List = Get-Content -Path $PCListPath
 
 #Clears Log Folder
-If (Test-Path $LogFolder) {
+if (Test-Path $LogFolder) {
     Remove-Item $LogFolder -Recurse -Force
 }
 
