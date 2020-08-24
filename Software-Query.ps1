@@ -106,7 +106,7 @@ foreach ($Computer in $List) {
     }
 
     #Creates Logs Based On Results
-    if ($Result -ccontains "Yes") {
+    if ($Result -contains "Yes") {
 
         if (!(Test-Path $LogFolder)){New-Item -ItemType Directory -Force -Path $LogFolder}
 
