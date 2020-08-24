@@ -137,8 +137,6 @@ foreach ($Computer in $List) {
 
                 $Cab = Get-ChildItem -Path $Source | Where-Object {$_.extension -eq ".cab" -and $_.Name -like "Windows*"}
 
-                Write-Host $Cab
-
                 $InstallString = "C:\temp\Software\$Cab"
                 ([WMICLASS]"\\$Computer\ROOT\CIMV2:Win32_Process").Create("DISM.exe /Online /Add-Package /PackagePath:$InstallString /Quiet")
             }
