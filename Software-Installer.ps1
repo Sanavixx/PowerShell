@@ -65,10 +65,7 @@ Date Modified: 25 August 2020
             Remove-Item $Batfile  -Force
             $Batfile = New-Item -Path $SoftwareFolder -Name "Install.bat" -ItemType "file" -Value ""
         }
-    }
-
-    Process {
-    
+        
         #Creates Batch File Based On File Type
         foreach ($BatItem in $BatList) {
         
@@ -97,6 +94,9 @@ Date Modified: 25 August 2020
                $Return = "1"
             }
         }
+    }
+
+    Process {
         
         foreach ($Computer in $List) {
         
