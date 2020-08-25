@@ -2,10 +2,10 @@ Function Software-Checker {
 
 <#
 .SYNOPSIS
-Queries Registry for specified software and logs results.
+Queries Registry for specified software.
 
 .DESCRIPTION
-Queries Registry for specified software and logs results.
+Queries Registry for specified software. Also logs results.
 
 .PARAMETER PCListPath
 Mandatory. Specifies the path to list of PCs.
