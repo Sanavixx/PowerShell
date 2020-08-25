@@ -84,13 +84,13 @@ Date Modified: 25 August 2020
         
             elseif ($BatItem | where {$_.extension -eq ".msp"}) {
         
-               Add-Content $BatFile "msiexec /p ""C:\temp\$programName\$BatItem"" REINSTALLMODE=""ecmus"" REINSTALL=""ALL"" /quiet /norestart"
+               Add-Content $BatFile "msiexec /p ""C:\temp\Software\$BatItem"" REINSTALLMODE=""ecmus"" REINSTALL=""ALL"" /quiet /norestart"
                $Return = "1"
             }
         
             elseif ($BatItem | where {$_.extension -eq ".msi"}) {
         
-               Add-Content $BatFile "msiexec.exe /i ""C:\temp\$programName\$BatItem"" /qn"
+               Add-Content $BatFile "msiexec.exe /i ""C:\temp\Software\$BatItem"" /qn"
                $Return = "1"
             }
         }
