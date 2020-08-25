@@ -2,7 +2,7 @@ Function Software-Remover {
 
 <#
 .SYNOPSIS
-Queries Registry for specified software, then uninstalls if found. Also logs results.
+Queries Registry for specified software, then uninstalls if found.
 
 .DESCRIPTION
 Queries Registry for specified software, then uninstalls if found. Also logs results.
