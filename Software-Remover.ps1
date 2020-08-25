@@ -136,7 +136,7 @@ Date Modified: 25 August 2020
         
                 New-Object -TypeName PSCustomObject -Property @{
                 ComputerName = $Computer
-                } | Export-Csv -NoTypeInformation -Path "$LogFolder\PCs $Software.csv" -Append -Force
+                } | Export-Csv -NoTypeInformation -Path "$LogFolder\PCs With $Software.csv" -Append -Force
         
                 Sleep 2
             }
